@@ -352,7 +352,7 @@ void RealSenseNodeFactory::startDevice()
 	if (_realSenseNode) _realSenseNode.reset();
 	std::string pid_str(_device.get_info(RS2_CAMERA_INFO_PRODUCT_ID));
 	//uint16_t pid = std::stoi(pid_str, 0, 16);
-	uint16_t pid = RS410_PID;
+	uint16_t pid = RS430_PID;
 	try
 	{
 		switch(pid)
